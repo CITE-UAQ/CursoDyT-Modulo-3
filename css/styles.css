@@ -1,0 +1,1084 @@
+/*Estilos generales*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/*.background {
+    overflow: hidden;
+}
+
+.background:before {
+    content: ' ';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background-image: url('../images/pexels-pixabay-301943.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+
+/*FUENTES*/
+/*@font-face {
+    font-family: "GMXBlack";
+    src: url('fonts/GMX-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GMXBold";
+    src: url('fonts/GMX-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: "Viga";
+    src: url('fonts/Viga-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Concert";
+    src: url('fonts/ConcertOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MontserratSBold";
+    src: url('fonts/Montserrat-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url('fonts/Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MontserratRegular";
+    src: url('fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MontserratLight";
+    src: url('fonts/Montserrat-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Estilos barra de navegación*/
+.navbar {
+    width: 100%;
+    height: 64px;
+    background-color: #567189;
+    color: white;
+}
+
+#logo {
+    float: left;
+    width: 520px;
+    background: transparent;
+    text-align: center;
+    padding: 5px 0px 4px 0px;
+}
+
+#logo img {
+    height: 55px;
+    margin: 0px auto;
+}
+
+#guide {
+    float: left;
+    width: 680px;
+    height: 64px;
+    background: transparent;
+    text-align: center;
+
+}
+
+#guide button {
+    font-family: "Viga";
+    font-size: 12px;
+    display: inline-block;
+    line-height: 64px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: transparent;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+
+#guide button:hover {
+    background-color: #6096B4;
+    box-shadow: 3px 3px 10px #93BFCF inset;
+}
+
+/*ESTILOS INICIO*/
+.content {
+    display: none;
+    padding-top: 180px;
+}
+
+.content.active {
+    display: block;
+}
+
+#title {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 0px auto 0px auto;
+}
+
+#title h1 {
+    font-family: "Viga";
+    font-size: 35px;
+    padding-bottom: 10px;
+    color: #876445;
+}
+
+#title h2 {
+    font-family: "Viga";
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: #CA955C;
+}
+
+#title p {
+    font-family: "MontserratRegular";
+    font-size: 25px;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    padding-top: 200px;
+}
+
+footer p {
+    font-family: "MontserratLight";
+    font-size: 11px;
+    text-align: center;
+}
+
+/*ESTILOS GUIA ACADEMICA*/
+.academic {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.academic.active {
+    display: block;
+}
+
+#pdf {
+    width: 100%;
+    height: 530px;
+}
+
+#pdf iframe {
+    border: 1px solid #B38E5D;
+}
+
+/*ESTILOS INTRODUCCION*/
+.intro {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.intro.active {
+    display: block;
+}
+
+#unit {
+    width: 90%;
+    height: 500px;
+    margin: 0px auto;
+    overflow: auto;
+    padding: 0px 10px;
+}
+
+#unit h3 {
+    font-family: "Viga";
+    font-size: 20px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+#unit p {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+#unit p:last-child {
+    padding-bottom: none;
+}
+
+#unit ol {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+    text-align: justify;
+    padding: 0px 0px 15px 0px;
+}
+
+#unit ol li {
+    margin: 0 0 0 3em;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.readMore_btn {
+    width: 500px;
+    height: 50px;
+    font-family: "MontserratSBold";
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6096B4;
+    color: black;
+}
+
+/*Overlay Aprendizajes*/
+.overlayIn {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlayIn.active {
+    visibility: visible;
+}
+
+.popupIn {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popupIn .btncerrarIn {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popupIn .btncerrarIn:hover {
+    color: #BDCDD6;
+}
+
+.popupIn.active {
+    opacity: 1;
+}
+
+.textIn {
+    width: 1000px;
+    height: auto;
+    background-color: #EEE9DA;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    overflow: auto;
+    font-family: "MontserratRegular";
+    color: black;
+}
+
+/*ESTILOS DE LOS CONCEPTOS CLAVE*/
+.concept {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.concept.active {
+    display: block;
+}
+
+#concepts {
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+}
+
+#concepts h3 {
+    font-family: "Viga";
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#concepts a {
+    font-family: "MontserratBold";
+    font-size: 13px;
+    text-decoration: none;
+    color: #7B8FA1;
+}
+
+/*Botones*/
+.btns {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btns button {
+    width: 300px;
+    height: 80px;
+    font-family: "MontserratBold";
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6096B4;
+    color: black;
+}
+
+.btns button:hover {
+    background-color: #93BFCF;
+    box-shadow: 3px 3px 10px #BDCDD6 inset;
+}
+
+/*Boton y texto*/
+.winds button {
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    width: 1000px;
+    height: auto;
+    background-color: #E8D5C4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    overflow: auto;
+}
+
+.text p {
+    font-family: "MontserratRegular";
+    font-size: 13px;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.text ul {
+    font-family: "MontserratRegular";
+    font-size: 13px;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.text ul li {
+    margin: 0 0 0 3em;
+    padding: 0;
+}
+
+.text ol {
+    font-family: "MontserratRegular";
+    font-size: 13px;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.text ol li {
+    margin: 0 0 0 3em;
+    padding: 0;
+}
+
+.text img {
+    display: block;
+    float: left;
+    padding-right: 10px;
+}
+
+.contrast {
+    background-color: #FFF1DC;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/*Primer overlay*/
+.overlay {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup .btncerrar {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup .btncerrar:hover {
+    color: #BDCDD6;
+}
+
+.popup.active {
+    opacity: 1;
+}
+
+/*Segundo overlay*/
+.overlay2 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay2.active {
+    visibility: visible;
+}
+
+.popup2 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup2 .btncerrar2 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup2 .btncerrar2:hover {
+    color: #BDCDD6;
+}
+
+.popup2.active {
+    opacity: 1;
+}
+
+/*Tercer overlay*/
+.overlay3 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay3.active {
+    visibility: visible;
+}
+
+.popup3 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup3 .btncerrar3 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup3 .btncerrar3:hover {
+    color: #691C32;
+}
+
+.popup3.active {
+    opacity: 1;
+}
+
+/*Cuarto overlay*/
+.overlay4 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay4.active {
+    visibility: visible;
+}
+
+.popup4 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup4 .btncerrar4 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup4 .btncerrar4:hover {
+    color: #691C32;
+}
+
+.popup4.active {
+    opacity: 1;
+}
+
+/*Quinto overlay*/
+.overlay5 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay5.active {
+    visibility: visible;
+}
+
+.popup5 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup5 .btncerrar5 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup5 .btncerrar5:hover {
+    color: #691C32;
+}
+
+.popup5.active {
+    opacity: 1;
+}
+
+/*Sexto overlay*/
+.overlay6 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay6.active {
+    visibility: visible;
+}
+
+.popup6 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup6 .btncerrar6 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup6 .btncerrar6:hover {
+    color: #691C32;
+}
+
+.popup6.active {
+    opacity: 1;
+}
+
+/*Septimo overlay*/
+.overlay7 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay7.active {
+    visibility: visible;
+}
+
+.popup7 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup7 .btncerrar7 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup7 .btncerrar7:hover {
+    color: #691C32;
+}
+
+.popup7.active {
+    opacity: 1;
+}
+
+/*Octavo overlay*/
+.overlay8 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay8.active {
+    visibility: visible;
+}
+
+.popup8 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup8 .btncerrar8 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup8 .btncerrar8:hover {
+    color: #691C32;
+}
+
+.popup8.active {
+    opacity: 1;
+}
+
+/*Noveno overlay*/
+.overlay9 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay9.active {
+    visibility: visible;
+}
+
+.popup9 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup9 .btncerrar9 {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup9 .btncerrar9:hover {
+    color: #691C32;
+}
+
+.popup9.active {
+    opacity: 1;
+}
+
+/*ESTILOS ACTIVIDADES*/
+.activity {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.activity.active {
+    display: block;
+}
+
+#activities {
+    width: 90%;
+    height: 500px;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+#activities h3 {
+    font-family: "Viga";
+    font-size: 20px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#activities h4 {
+    font-family: "MontserratRegular";
+    font-size: 17px;
+    text-align: justify;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#activities p {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+#activities ol {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+}
+
+#activities ol li {
+    margin: 0 0 0 3em;
+    padding: 0;
+}
+
+#activities #nonumber {
+    list-style-type: none;
+}
+
+/*#activities ol li ol {
+    margin: 0 0 0 1.5em;
+    padding: 0;
+}*/
+
+/*ESTILOS RECURSOS*/
+.resource {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.resource.active {
+    display: block;
+}
+
+#resources {
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#resources h3 {
+    font-family: "Viga";
+    font-size: 20px;
+    padding-bottom: 120px;
+}
+
+#resources ol {
+    font-weight: bold;
+    font-family: "MontserratRegular";
+    font-size: 15px;
+}
+
+#resources ol li ol {
+    margin: 0 0 0 1.5em;
+    padding: 0;
+}
+
+#resources ol li ol li {
+    font-weight: normal;
+}
+
+/*ESTILOS EVALUACION*/
+.evaluation {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.evaluation.active {
+    display: block;
+}
+
+#doc {
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+}
+
+#doc h3 {
+    font-family: "Viga";
+    font-size: 20px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+#doc p {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+}
+
+#doc table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "MontserratRegular";
+    font-size: 15px;
+}
+
+#doc th {
+    width: 33%;
+    height: 50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: #6096B4;
+    color: white;
+}
+
+#doc td {
+    width: 33%;
+    height: 50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#doc td#color {
+    width: 33%;
+    height: 50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: #93BFCF;
+}
+
+/*ESTILOS CIERRE*/
+.conclusion {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.conclusion.active {
+    display: block;
+}
+
+#end {
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+}
+
+#end h3 {
+    font-family: "Viga";
+    font-size: 20px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+#end p {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+#end p:last-child {
+    align-items: flex-start;
+}
+
+#end a {
+    font-family: "MontserratBold";
+    font-size: 13px;
+    text-decoration: none;
+    color: #7B8FA1;
+}
+
+/*ESTILOS BIBLIOGRAFIA*/
+.bibliography {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bibliography.active {
+    display: block;
+}
+
+#reference {
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+}
+
+#reference h3 {
+    font-family: "Viga";
+    font-size: 20px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#reference h4 {
+    font-family: "MontserratRegular";
+    font-size: 17px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#reference:last-child h4 {
+    padding-top: 30px;
+}
+
+#reference p {
+    font-family: "MontserratRegular";
+    font-size: 15px;
+    text-align: center;
+}
